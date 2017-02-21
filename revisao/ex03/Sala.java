@@ -1,2 +1,2 @@
-public class Sala extends Andar(){
+public class Sala(){
 }
