@@ -9,7 +9,7 @@ package br.edu.ifes.exercicio_shapes;
  *
  * @author pchan
  */
-public class Triangle implements Shape {
+public class Circle implements Shape {
 
     @Override
     public void draw() {

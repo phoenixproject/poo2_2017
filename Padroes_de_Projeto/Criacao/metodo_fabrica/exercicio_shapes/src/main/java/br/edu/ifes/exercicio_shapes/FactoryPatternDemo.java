@@ -9,11 +9,7 @@ package br.edu.ifes.exercicio_shapes;
  *
  * @author pchan
  */
-public class Triangle implements Shape {
-
-    @Override
-    public void draw() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
+public class FactoryPatternDemo {
+    public Shape shape;
+    public ShapeFactory shapeFactory;
 }
