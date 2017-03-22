@@ -1,28 +1,32 @@
-## Revis„o OO
+## Revis√£o OO
 
-- ExercÌcio 1 - Revis„o OO (ok)
-- Exercicio 2 - Revis„o OO - Conta Corrente com histÛrico
+- Exerc√≠cio 1 - Revis√£o OO (ok)
+- Exercicio 2 - Revis√£o OO - Conta Corrente com hist√≥rico
 
-## MÈtodo F·brica
+## M√©todo F√°brica
 
-- ExercÌcio - MÈtodo F·brica - Formato Imagens (ok)
-- ExercÌcio - MÈtodo F·brica - Shapes (ok)
-- ExercÌcio - MÈtodo F·brica - Pizza
-- ExercÌcio - MÈtodo F·brica - Jogo
-- ExercÌcio - MÈtodo F·brica - Bebidas
+- Exerc√≠cio - M√©todo F√°brica - Formato Imagens (ok)
+- Exerc√≠cio - M√©todo F√°brica - Shapes (ok)
+- Exerc√≠cio - M√©todo F√°brica - Pizza
+- Exerc√≠cio - M√©todo F√°brica - Jogo
+- Exerc√≠cio - M√©todo F√°brica - Bebidas
 
-## F·brica Abstrata 
+## F√°brica Abstrata 
 
-- ExercÌcio - MÈtodo F·brica - Telefonia
-- ExercÌcio - F·brica Abstrata - Mudando Tema GUI
+- Exerc√≠cio - M√©todo F√°brica - Telefonia
+- Exerc√≠cio - F√°brica Abstrata - Mudando Tema GUI
 
 ## Builder
 
-- ExercÌcio - Builder RefeiÁ„o (Lanchonete)
-- ExercÌcio - Builder Piscinas
+- Exerc√≠cio - Builder Refei√ß√£o (Lanchonete)
+- Exerc√≠cio - Builder Piscinas
 
-## SerializaÁ„o e Streams
+## Serializa√ß√£o e Streams
 
-- ExercÌcio - Stream Leitura Arquivo CSV
-- ExercÌcio - SerializaÁ„o Mensagem
-- ExercÌcio - Prototype
+- Exerc√≠cio - Stream Leitura Arquivo CSV
+- Exerc√≠cio - Serializa√ß√£o Mensagem
+- Exerc√≠cio - Prototype
+
+## Singleton
+
+- Exerc√≠cio - DataBase Example
