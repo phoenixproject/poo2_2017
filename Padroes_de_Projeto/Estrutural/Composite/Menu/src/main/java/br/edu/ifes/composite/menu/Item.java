@@ -22,6 +22,10 @@ public abstract class Item {
         return this.descricao;
     }
     
+    public void setDescricao(String descricao){
+        this.descricao = descricao;
+    }
+    
     public abstract void addItem(Item item);
     public abstract void removeItem(Item item);
     public abstract Item[] getItens();
