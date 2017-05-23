@@ -14,10 +14,9 @@ public abstract class Persistencia {
     PersistenciaDeDados persistenciaDeDados;
     
     public Persistencia(PersistenciaDeDados persistenciaDeDados){
-        this.persistenciaDeDados = this.persistenciaDeDados;
+        this.persistenciaDeDados = persistenciaDeDados;
     }
     
-    public void salvar(Object object){        
-        System.err.println("Salvar objeto");
-    }
+    public void salvar(Object object){};
+    
 }

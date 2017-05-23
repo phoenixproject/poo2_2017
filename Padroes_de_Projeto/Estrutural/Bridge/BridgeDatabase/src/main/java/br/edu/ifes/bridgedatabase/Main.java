@@ -23,10 +23,8 @@ public class Main {
         }
         
         Persistencia persistenceAPI = new ImplementacaoPersistencia(implementor);
-        
-        //persistenceAPI.save(null);        
-        persistenceAPI.salvar(new Object());
-        //persistenceAPI.persistenciaDeDados.salvar(implementor);
+                
+        persistenceAPI.salvar(new Object());        
     }
 
     private static boolean databaseDriverExists() {
