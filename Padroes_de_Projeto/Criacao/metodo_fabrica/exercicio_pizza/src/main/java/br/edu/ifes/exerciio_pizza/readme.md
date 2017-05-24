@@ -1,1 +1,1 @@
-![Alt text](https://github.com/phoenixproject/poo2_2017/blob/master/revisao/Exercicio_OO_Revisao_Conta_Corrente_historico/contahistorico/src/main/java/br/edu/ifes/contahistorico/digrama_historico_conta.png?raw=true "Diagrama de Domínio do Problema")
+![Alt text](https://github.com/phoenixproject/poo2_2017/blob/master/Padroes_de_Projeto/Criacao/metodo_fabrica/exercicio_pizza/src/main/java/br/edu/ifes/exerciio_pizza/diagrama_metodo_fabrica_pizza.png?raw=true "Diagrama de Domínio do Problema")
