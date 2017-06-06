@@ -3,6 +3,8 @@
 - Exercício 1 - Revisão OO (ok)
 - Exercicio 2 - Revisão OO - Conta Corrente com histórico
 
+### Padrões de Criação (Criacionais)
+
 ## Método Fábrica
 
 - Exercício - Método Fábrica - Formato Imagens (ok)
@@ -30,3 +32,10 @@
 ## Singleton
 
 - Exercício - DataBase Example
+
+### Padrões Estruturais
+
+### Padrões Comportamentais
+
+## Estratégia (Strategy) - Fechado a extensão, aberto à composição
+
