@@ -39,3 +39,5 @@
 
 ## Estratégia (Strategy) - Fechado a extensão, aberto à composição
 
+- Exercício - Mover arquivo com thread (implementar preferencialmente com Runnable). Duas threads devem mover os arquivos existentes, cada uma movendo o seu sem atrapalhar o trabalho da outra thread.
+
