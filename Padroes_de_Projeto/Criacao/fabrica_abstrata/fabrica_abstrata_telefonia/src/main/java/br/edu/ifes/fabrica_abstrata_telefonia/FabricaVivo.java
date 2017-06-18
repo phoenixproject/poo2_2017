@@ -12,7 +12,7 @@ package br.edu.ifes.fabrica_abstrata_telefonia;
 public class FabricaVivo extends FabricaAbstrataEnvios{ 
 
     @Override
-    public  Cobranca criaCobranca() {
+    public Cobranca criaCobranca() {
         return new CobrancaVivo();
     }
     @Override
