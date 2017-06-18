@@ -6,7 +6,7 @@ import java.util.concurrent.ThreadLocalRandom;
 /**
  * @author felipe
  */
-public class Inimigo extends PersonagemPadrao implements Observador{
+    public class Inimigo extends PersonagemPadrao implements Observador{
         
     
     public Inimigo(String pathImage, int posX, int posY) {
@@ -16,7 +16,7 @@ public class Inimigo extends PersonagemPadrao implements Observador{
     public void update(Observavel ob) {
         moveInimigo((Heroi) ob);
     }
-    public void moveInimigo(Heroi heroi){        
+    private void moveInimigo(Heroi heroi){        
         
         if(this.posY >= 400){
             this.posY = -20;

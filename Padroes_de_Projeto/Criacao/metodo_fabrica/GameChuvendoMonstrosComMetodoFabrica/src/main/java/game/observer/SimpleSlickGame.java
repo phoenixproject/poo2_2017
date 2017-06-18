@@ -16,22 +16,28 @@ import org.newdawn.slick.SlickException;
 import java.io.*;
 
 public class SimpleSlickGame extends BasicGame {
+    
     private int timeCount = 0;    
     private Image land;
     private Inimigo inimigo1;
     private Inimigo inimigo2;
     private Inimigo inimigo3;
-    private InimigoEsperto inimigoEsperto;
+    private Inimigo inimigoEsperto;
     private Image gameover;
     private Image ganhouJogo;
-
+    FabricaDeInimigos fabricaDeInimigos;                       
+    FabricaDeNotificacoes fabricaDeNotificacoes;
+    
     boolean ganhou=false;
     int time;
   
     Heroi heroi;
 
     public SimpleSlickGame(String gamename) {
-        super(gamename);
+        super(gamename);        
+        fabricaDeInimigos =  new FabricaDeInimigos(); 
+        //Adicionado para utilização do método fábrica de criação de imagens
+        fabricaDeNotificacoes = new FabricaDeNotificacoes();
     }
 
     @Override
@@ -41,22 +47,22 @@ public class SimpleSlickGame extends BasicGame {
             File file = new File(".");
             String filePath = file.getCanonicalPath();
             
-            
-
-            land = new Image(filePath + "\\src\\main\\java\\bg.png");
-            heroi = new Heroi(filePath + "\\src\\main\\java\\heroi1.png", 200, 400);
-            
-            inimigo1 = new Inimigo(filePath + "\\src\\main\\java\\devil1.png", 500, -100);
-            inimigo2 = new Inimigo( filePath + "\\src\\main\\java\\devil2.png",300 , -00);
-            inimigo3 = new Inimigo(filePath + "\\src\\main\\java\\devil3.png", 400, -250);
+            //land = new Image(filePath + "\\src\\main\\java\\br\\edu\\ifes\\gamechuvendomonstroscommetodofabrica\\bg.png");
+            land = this.fabricaDeNotificacoes.criarImagensNotificacao("land");
+            heroi = new Heroi(filePath + "\\src\\main\\java\\br\\edu\\ifes\\gamechuvendomonstroscommetodofabrica\\heroi1.png", 200, 400);
+            //main\java\br\edu\ifes\gamechuvendomonstroscommetodofabrica
             
             
-            inimigoEsperto = new InimigoEsperto(filePath + "\\src\\main\\java\\devil3.png", 200, -250);
+            inimigo1 = fabricaDeInimigos.criarInimigo(1);
+            inimigo2 = fabricaDeInimigos.criarInimigo(2);
+            inimigo3 = fabricaDeInimigos.criarInimigo(3);
+            inimigoEsperto = fabricaDeInimigos.criarInimigo(4);
             
             
-            
-            gameover = new Image(filePath + "\\src\\main\\java\\gameover.png");
-            ganhouJogo = new Image(filePath + "\\src\\main\\java\\ganhou.png");
+            //gameover = new Image(filePath + "\\src\\main\\java\\br\\edu\\ifes\\gamechuvendomonstroscommetodofabrica\\gameover.png");
+            gameover = this.fabricaDeNotificacoes.criarImagensNotificacao("gameover");
+            //ganhouJogo = new Image(filePath + "\\src\\main\\java\\br\\edu\\ifes\\gamechuvendomonstroscommetodofabrica\\ganhou.png");
+            ganhouJogo = this.fabricaDeNotificacoes.criarImagensNotificacao("ganhouJogo");
 
             
             heroi.addMonitores(inimigo1);
@@ -89,11 +95,13 @@ public class SimpleSlickGame extends BasicGame {
         inimigoEsperto.render();
        
         if(time/1000 >= 10){
+            ganhouJogo.draw(200,200);
             gc.pause();
             ganhouJogo.draw(200,200);
+            ganhou = true;
         }
         
-        if(gc.isPaused())
+        if(gc.isPaused() && ganhou == false)
             gameover.draw(200,200);
     }
 
@@ -124,7 +132,7 @@ public class SimpleSlickGame extends BasicGame {
         if (input.isKeyDown(Input.KEY_RIGHT))
             this.heroi.setPosX(this.heroi.getPosX() + 2);        
         timeCount++;
-        if (timeCount == 10){ 
+        if (timeCount == 50){ 
             heroi.noificarTodos();                    
             inimigo1.noificarTodos();
             inimigo2.noificarTodos();

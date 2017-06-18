@@ -7,7 +7,7 @@ import java.util.concurrent.ThreadLocalRandom;
  *
  * @author felipe
  */
-public class InimigoEsperto extends PersonagemPadrao implements Observador {
+public class InimigoEsperto extends Inimigo {
      
     int xOriginal;
     int value=10;
